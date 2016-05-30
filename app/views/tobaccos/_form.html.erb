@@ -1,0 +1,25 @@
+<%= form_for(@tobacco) do |f| %>
+  <% if @tobacco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tobacco.errors.count, "error") %> prohibited this tobacco from being saved:</h2>
+
+      <ul>
+      <% @tobacco.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :account_id %><br>
+    <%= f.collection_select :account_id, Account.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.collection_select :brand_id, Brand.all, :id, :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

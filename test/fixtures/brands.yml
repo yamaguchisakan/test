@@ -1,0 +1,33 @@
+# == Schema Information
+#
+# Table name: brands
+#
+#  id         :integer          not null, primary key
+#  name       :string           not null
+#  price      :integer          not null
+#  nicotin    :float            not null
+#  tar        :float            not null
+#  maker_id   :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: 1
+  brand_type: MyString
+  growing_district: MyString
+  nicotin: 1.5
+  tar: 1.5
+  maker_id: 
+
+two:
+  name: MyString
+  price: 1
+  brand_type: MyString
+  growing_district: MyString
+  nicotin: 1.5
+  tar: 1.5
+  maker_id: 

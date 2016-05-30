@@ -1,0 +1,18 @@
+<div class="alert alert-success notice" role="alert"><%= notice %></div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @account.name %></dd>
+
+  <dt>Age:</dt>
+  <dd><%= @account.age %></dd>
+
+  <dt>Email:</dt>
+  <dd><%= @account.email %></dd>
+
+  <dt>Reference time:</dt>
+  <dd><%= @account.reference_time %></dd>
+</dl>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

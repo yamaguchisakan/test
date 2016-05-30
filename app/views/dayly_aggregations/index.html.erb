@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dayly Aggregations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aggregation day</th>
+      <th>Avg interval</th>
+      <th>Avg number</th>
+      <th>Avg price</th>
+      <th>Account</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dayly_aggregations.each do |dayly_aggregation| %>
+      <tr>
+        <td><%= dayly_aggregation.aggregation_day %></td>
+        <td><%= dayly_aggregation.avg_interval %></td>
+        <td><%= dayly_aggregation.avg_number %></td>
+        <td><%= dayly_aggregation.avg_price %></td>
+        <td><%= dayly_aggregation.account %></td>
+        <td><%= link_to 'Show', dayly_aggregation %></td>
+        <td><%= link_to 'Edit', edit_dayly_aggregation_path(dayly_aggregation) %></td>
+        <td><%= link_to 'Destroy', dayly_aggregation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dayly aggregation', new_dayly_aggregation_path %>

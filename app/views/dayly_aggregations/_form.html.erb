@@ -1,0 +1,37 @@
+<%= form_for(@dayly_aggregation) do |f| %>
+  <% if @dayly_aggregation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dayly_aggregation.errors.count, "error") %> prohibited this dayly_aggregation from being saved:</h2>
+
+      <ul>
+      <% @dayly_aggregation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :aggregation_day %><br>
+    <%= f.date_select :aggregation_day %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_interval %><br>
+    <%= f.time_select :avg_interval %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_number %><br>
+    <%= f.text_field :avg_number %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_price %><br>
+    <%= f.text_field :avg_price %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br>
+    <%= f.text_field :account_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

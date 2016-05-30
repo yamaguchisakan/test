@@ -1,0 +1,41 @@
+<%= form_for(@smoking) do |f| %>
+  <% if @smoking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@smoking.errors.count, "error") %> prohibited this smoking from being saved:</h2>
+
+      <ul>
+      <% @smoking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :smoke_date %><br>
+    <%= f.date_select :smoke_date %>
+  </div>
+  <div class="field">
+    <%= f.label :smoke_time %><br>
+    <%= f.time_select :smoke_time %>
+  </div>
+  <div class="field">
+    <%= f.label :smoke_interval %><br>
+    <%= f.time_select :smoke_interval %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :tobacco_id %><br>
+    <%= f.text_field :tobacco_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

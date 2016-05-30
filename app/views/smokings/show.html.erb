@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Smoke date:</strong>
+  <%= @smoking.smoke_date %>
+</p>
+
+<p>
+  <strong>Smoke time:</strong>
+  <%= @smoking.smoke_time %>
+</p>
+
+<p>
+  <strong>Smoke interval:</strong>
+  <%= @smoking.smoke_interval %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @smoking.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @smoking.longitude %>
+</p>
+
+<p>
+  <strong>Tobacco:</strong>
+  <%= @smoking.tobacco %>
+</p>
+
+<%= link_to 'Edit', edit_smoking_path(@smoking) %> |
+<%= link_to 'Back', smokings_path %>

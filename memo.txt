@@ -1,0 +1,6 @@
+rails g scaffold account name:string age:integer email:text:uniq password:digest reference_time:time
+rails g scaffold maker name:string:uniq
+rails g scaffold brand name:string:uniq price:integer brand_type:string growing_district:string nicotin:float tar:float maker:references
+rails g scaffold dayly_aggregation aggregation_day:date avg_interval:time avg_number:float avg_price:float account:references
+rails g scaffold tobacco account:references brand:references
+rails g scaffold smoking smoke_date:date smoke_time:time smoke_interval:time latitude:float longitude:float tobacco:references

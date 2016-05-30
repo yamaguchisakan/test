@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: smokings
+#
+#  id             :integer          not null, primary key
+#  smoke_date     :date             not null
+#  smoke_time     :time             not null
+#  smoke_interval :time             not null
+#  latitude       :float            not null
+#  longitude      :float            not null
+#  tobacco_id     :integer          not null
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  smoke_date: 2016-05-26
+  smoke_time: 2016-05-26 04:20:04
+  smoke_interval: 2016-05-26 04:20:04
+  latitude: 1.5
+  longitude: 1.5
+  tobacco_id: 
+
+two:
+  smoke_date: 2016-05-26
+  smoke_time: 2016-05-26 04:20:04
+  smoke_interval: 2016-05-26 04:20:04
+  latitude: 1.5
+  longitude: 1.5
+  tobacco_id: 

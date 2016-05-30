@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: dayly_aggregations
+#
+#  id              :integer          not null, primary key
+#  aggregation_day :date             not null
+#  avg_interval    :time             not null
+#  avg_number      :float            not null
+#  avg_price       :float            not null
+#  account_id      :integer          not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aggregation_day: 2016-05-26
+  avg_interval: 2016-05-26 04:19:55
+  avg_number: 1.5
+  avg_price: 1.5
+  account_id: 
+
+two:
+  aggregation_day: 2016-05-26
+  avg_interval: 2016-05-26 04:19:55
+  avg_number: 1.5
+  avg_price: 1.5
+  account_id: 

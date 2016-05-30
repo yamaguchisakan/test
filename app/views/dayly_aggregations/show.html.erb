@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aggregation day:</strong>
+  <%= @dayly_aggregation.aggregation_day %>
+</p>
+
+<p>
+  <strong>Avg interval:</strong>
+  <%= @dayly_aggregation.avg_interval %>
+</p>
+
+<p>
+  <strong>Avg number:</strong>
+  <%= @dayly_aggregation.avg_number %>
+</p>
+
+<p>
+  <strong>Avg price:</strong>
+  <%= @dayly_aggregation.avg_price %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @dayly_aggregation.account %>
+</p>
+
+<%= link_to 'Edit', edit_dayly_aggregation_path(@dayly_aggregation) %> |
+<%= link_to 'Back', dayly_aggregations_path %>

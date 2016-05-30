@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: accounts
+#
+#  id              :integer          not null, primary key
+#  name            :string           not null
+#  age             :integer          not null
+#  email           :text             not null
+#  password_digest :string           not null
+#  reference_time  :time             not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  email: MyText
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  reference_time: 2016-05-26 03:15:02
+
+two:
+  name: MyString
+  age: 1
+  email: MyText
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  reference_time: 2016-05-26 03:15:02

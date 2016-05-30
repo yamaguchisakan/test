@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @tobacco.account %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @tobacco.brand %>
+</p>
+
+<%= link_to 'Edit', edit_tobacco_path(@tobacco) %> |
+<%= link_to 'Back', tobaccos_path %>
